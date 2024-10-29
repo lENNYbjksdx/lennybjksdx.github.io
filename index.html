@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lenny</title>    
+    <script src="aframe.min.js"></script>
+    <script src="aframe-ar.js"></script>
+</head>
+<body>
+<a-scene embedded arjs>
+    <a-marker preset="hiro">
+        <a-box color="blue"
+        depth="2"
+        heigth="1.5"
+        width="0.5"
+        position="0 0.75 0"
+        rotation="45 0 0"
+        material="color:red;transparent:true;opacity:0.5;">
+    </a-box>
+    </a-marker>
+
+    <a-marker preset="kanji">
+        <a-sphere src="images.jpg">
+
+
+        </a-sphere>
+    </a-marker>
+
+
+
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
